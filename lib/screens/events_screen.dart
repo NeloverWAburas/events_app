@@ -52,9 +52,11 @@ class _EventsScreenState extends State<EventsScreen>
                   fontSize: 17,
                 ),
               ),
-              Positioned(child: Container(decoration: BoxDecoration(
-                shape:BoxShape.circle
-              ),))
+              Positioned(
+               bottom:Container(
+                decoration: BoxDecoration(shape: BoxShape.circle),
+              ), 
+                  ),
             ],
           ),
         ),
