@@ -29,6 +29,7 @@ class _EventsScreenState extends State<EventsScreen>
         //centerTitle: true,
         title: Text(
           "Events",
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Color(0xff3E3A57),
             fontSize: 17,
