@@ -35,14 +35,14 @@ class _EventsScreenState extends State<EventsScreen>
           ),
         ),*/
         toolbarHeight: 152,
-        flexibleSpace: Container(
+        flexibleSpace: /*Container(
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/images/AppBarImage.png"),
               fit: BoxFit.cover,
             ),
           ),
-          child: Stack(
+          child: */Stack(
             overflow: Overflow.visible,
             alignment: Alignment.topCenter,
             children: [
@@ -54,7 +54,7 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               ),
               Positioned(
-                top: 128,
+                top: 120,
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   child: Image.asset("assets/images/Mask Group 8.png"),
