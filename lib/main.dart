@@ -5,10 +5,21 @@ import 'package:events/screens/launch_screen.dart';
 import 'package:events/screens/login_screen.dart';
 import 'package:events/screens/out_boarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefController().initPref();
+  debugPaintSizeEnabled = true;
+  debugPaintBaselinesEnabled = false;
+  debugPaintLayerBordersEnabled = false;
+  debugPaintPointersEnabled = false;
+  debugRepaintRainbowEnabled = false;
+  debugRepaintTextRainbowEnabled = false;
+  debugDisableClipLayers = false;
+  debugDisablePhysicalShapeLayers = false;
+  debugDisableOpacityLayers = false;
+
   runApp(MyApp());
 }
 
