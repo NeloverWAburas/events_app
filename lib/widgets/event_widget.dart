@@ -8,9 +8,7 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
-        onTap: (() => () {
-          
-        }),
+        onTap: (() => () {}),
         child: SizedBox(
           height: 103,
           //width: 343,
