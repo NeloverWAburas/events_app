@@ -56,7 +56,7 @@ class _EventsScreenState extends State<EventsScreen>
               ),
             ),
             Positioned(
-              top: 120,
+              top: 115,
               child: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Image.asset("assets/images/Mask Group 8.png"),
