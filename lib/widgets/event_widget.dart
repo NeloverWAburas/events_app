@@ -54,7 +54,7 @@ class EventWidget extends StatelessWidget {
             ),
           ),
           Container(
-            width:50 ,
+            width: 50,
             child: Align(
               alignment: Alignment.centerRight,
               child: Text(
