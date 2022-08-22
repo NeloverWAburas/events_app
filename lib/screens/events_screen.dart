@@ -54,7 +54,7 @@ class _EventsScreenState extends State<EventsScreen>
           color: Color(0xff3E3A57),
           size: 20.0,
           textDirection: TextDirection.ltr,
-        ),)
+        ),),
             Positioned(
               top: 115,
               child: CircleAvatar(
