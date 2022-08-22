@@ -46,98 +46,100 @@ class _EventsScreenState extends State<EventsScreen>
         ),
         backgroundColor: Color(0x00f44336),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          SizedBox(
-            height: 128,
-            child: Column(
-              children: [
-                SizedBox(height: 40),
-                Text(
-                  "Category Name",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                    color: Color(0xff3E3A57),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            SizedBox(
+              height: 128,
+              child: Column(
+                children: [
+                  SizedBox(height: 40),
+                  Text(
+                    "Category Name",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                      color: Color(0xff3E3A57),
+                    ),
                   ),
-                ),
-                SizedBox(height: 14),
-                Text(
-                  "12 Event",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 11,
-                    color: Color(0xffFF4E62),
+                  SizedBox(height: 14),
+                  Text(
+                    "12 Event",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11,
+                      color: Color(0xffFF4E62),
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 50,
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              child: AppBar(
-                backgroundColor: Color(0xffFBFBFC),
-                bottom: TabBar(
-                    controller: _tabController,
-                    indicatorColor: Color(0xff253975),
-                    labelColor: Color(0xff253975),
-                    unselectedLabelColor: Color(0xff3A3652),
-                    overlayColor: MaterialStateProperty.resolveWith(
-                        (Set<MaterialState> states) {
-                      if (states.contains(MaterialState.hovered))
-                        return Colors.white;
-                    }),
-                    tabs: [
-                      Tab(
-                        child: Text('Active',
-                            style: TextStyle(
-                                fontWeight: _tabController.index == 0
-                                    ? FontWeight.bold
-                                    : FontWeight.w100)),
-                      ),
-                      Tab(
-                        child: Text('End',
-                            style: TextStyle(
-                                fontWeight: _tabController.index == 1
-                                    ? FontWeight.bold
-                                    : FontWeight.w100)),
-                      ),
-                    ]),
+                ],
               ),
             ),
-          ),
-          Expanded(
+            SizedBox(
+              height: 50,
               child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 16),
-            //padding: EdgeInsets.symmetric(horizontal: 10),
-            child: TabBarView(
-              controller: _tabController,
-              children: [
-                Container(
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(height: 15),
-                      EventWidget(),
-                      SizedBox(height: 15),
-                      EventWidget(),
-                    ],
-                  ),
+                margin: EdgeInsets.symmetric(horizontal: 16),
+                child: AppBar(
+                  backgroundColor: Color(0xffFBFBFC),
+                  bottom: TabBar(
+                      controller: _tabController,
+                      indicatorColor: Color(0xff253975),
+                      labelColor: Color(0xff253975),
+                      unselectedLabelColor: Color(0xff3A3652),
+                      overlayColor: MaterialStateProperty.resolveWith(
+                          (Set<MaterialState> states) {
+                        if (states.contains(MaterialState.hovered))
+                          return Colors.white;
+                      }),
+                      tabs: [
+                        Tab(
+                          child: Text('Active',
+                              style: TextStyle(
+                                  fontWeight: _tabController.index == 0
+                                      ? FontWeight.bold
+                                      : FontWeight.w100)),
+                        ),
+                        Tab(
+                          child: Text('End',
+                              style: TextStyle(
+                                  fontWeight: _tabController.index == 1
+                                      ? FontWeight.bold
+                                      : FontWeight.w100)),
+                        ),
+                      ]),
                 ),
-                Container(
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(height: 15),
-                      EventWidget(),
-                    ],
-                  ),
-                ),
-              ],
+              ),
             ),
-          ))
-        ],
+            Expanded(
+                child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              //padding: EdgeInsets.symmetric(horizontal: 10),
+              child: TabBarView(
+                controller: _tabController,
+                children: [
+                  Container(
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(height: 15),
+                        EventWidget(),
+                        SizedBox(height: 15),
+                        EventWidget(),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(height: 15),
+                        EventWidget(),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ))
+          ],
+        ),
       ),
     );
   }
