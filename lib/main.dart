@@ -11,14 +11,14 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefController().initPref();
   debugPaintSizeEnabled = true;
-  debugPaintBaselinesEnabled = false;
-  debugPaintLayerBordersEnabled = true;
+  /*debugPaintBaselinesEnabled = false;
+  debugPaintLayerBordersEnabled = false;
   debugPaintPointersEnabled = false;
   debugRepaintRainbowEnabled = false;
   debugRepaintTextRainbowEnabled = false;
   debugDisableClipLayers = false;
   debugDisablePhysicalShapeLayers = false;
-  debugDisableOpacityLayers = false;
+  debugDisableOpacityLayers = false;*/
 
   runApp(MyApp());
 }
