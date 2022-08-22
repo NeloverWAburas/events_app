@@ -19,36 +19,35 @@ class EventWidget extends StatelessWidget {
           SizedBox(width: 10),
           SizedBox(
             height: 80,
-            child: Align(
-              alignment: Alignment.bottomRight,
-              child: Column(
-                children: [
-                  Text(
-                    "12:00am-2hours",
-                    style: TextStyle(
-                      color: Colors.grey,
-                    ),
+            child: Column(
+              children: [
+                Text(
+                  "12:00am-2hours",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 11,
                   ),
-                  SizedBox(
-                    height: 5,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Event Name",
+                  style: TextStyle(fontSize: 15,),
+                ),
+                SizedBox(
+                  height: 7,
+                ),
+                Text(
+                  "12/12/2020",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 11,
                   ),
-                  Text(
-                    "Event Name",
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    "12/12/2020",
-                    style: TextStyle(
-                      color: Colors.grey,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-          )
+          ),
         ]),
       ),
     );
