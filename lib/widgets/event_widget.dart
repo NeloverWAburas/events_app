@@ -55,13 +55,20 @@ class EventWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: double.infinity,
-            child: Align(
-              alignment: Alignment.topRight,
-              child: Text(
-                "Active",
-                style: TextStyle(
-                  color: Colors.green,
+            child: Container(
+              padding: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+          //color: Colors.red,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: Color(0xff939397)),
+        ),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Text(
+                  "Active",
+                  style: TextStyle(
+                    color: Colors.green,
+                  ),
                 ),
               ),
             ),
