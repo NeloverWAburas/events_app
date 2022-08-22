@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class EventWidget extends StatelessWidget {
@@ -6,7 +7,9 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Image.asset("assets/images/Rectangle 2968.png"),
-      Column(children: [
+      Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
         Text(
           "12:00am-2hours",
           style: TextStyle(
