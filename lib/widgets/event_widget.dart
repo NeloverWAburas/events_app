@@ -20,10 +20,11 @@ class EventWidget extends StatelessWidget {
           SizedBox(
             height: 80,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
+              //mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
                   "12:00am-2hours",
+                  textAlign: TextAlign.left,
                   style: TextStyle(
                     color: Colors.grey,
                   ),
