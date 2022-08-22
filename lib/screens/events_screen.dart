@@ -75,7 +75,7 @@ class _EventsScreenState extends State<EventsScreen>
           SizedBox(
             height: 50,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              margin: EdgeInsets.symmetric(horizontal: 16),
               child: AppBar(
                 backgroundColor: Color(0xffFBFBFC),
                 bottom: TabBar(
@@ -108,9 +108,8 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           Expanded(
-              flex: 1,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                margin: EdgeInsets.symmetric(horizontal: 16),
                 child: TabBarView(
                   controller: _tabController,
                   children: [
