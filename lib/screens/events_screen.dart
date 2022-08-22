@@ -107,8 +107,8 @@ class _EventsScreenState extends State<EventsScreen>
               ),
             ),
           ),
-          SizedBox(
-              height: 500,
+          Expanded(
+              flex: 4,
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TabBarView(
