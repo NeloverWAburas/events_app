@@ -47,6 +47,7 @@ class _EventsScreenState extends State<EventsScreen>
           overflow: Overflow.visible,
           alignment: Alignment.topCenter,
           children: [
+            Image.asset("assets/images/AppBarImage.png")
             Text(
               "Events",
               style: TextStyle(
