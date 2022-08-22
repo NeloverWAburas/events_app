@@ -28,7 +28,7 @@ class _EventsScreenState extends State<EventsScreen>
       appBar: AppBar(
         //centerTitle: true,
         title: Align(
-          alignment: Alignment.centerRight,
+          alignment: Alignment.topCenter,
           child: Text(
             "Events",
             style: TextStyle(
