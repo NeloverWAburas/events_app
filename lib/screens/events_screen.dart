@@ -105,6 +105,7 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           Container(
+            padding: EdgeInsets.symmetric(horizontal:16),
             child: Expanded(
                 flex: 2,
                 child: TabBarView(
