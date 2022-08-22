@@ -8,6 +8,9 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
+        onTap: (() => () {
+          
+        }),
         child: SizedBox(
           height: 103,
           //width: 343,
@@ -17,8 +20,8 @@ class EventWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               border: Border.all(color: Color(0xffECECEF)),
             ),
-            padding:
-                const EdgeInsets.symmetric(horizontal: 14, vertical: 12), //14, 12
+            padding: const EdgeInsets.symmetric(
+                horizontal: 14, vertical: 12), //14, 12
             child: Row(children: [
               Image.asset("assets/images/Rectangle 2968.png"),
               SizedBox(width: 10),
