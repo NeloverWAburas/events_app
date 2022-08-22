@@ -11,9 +11,9 @@ class EventWidget extends StatelessWidget {
       width: 343,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.red,
+          //color: Colors.red,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Color(0xff3232a9)),
+          border: Border.all(color: Color(0xffECECEF)),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         child: Row(children: [
