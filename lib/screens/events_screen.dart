@@ -67,7 +67,7 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               )
             ],
-          ),
+         // ),
         ),
         backgroundColor: Color(0x00f44336),
       ),
