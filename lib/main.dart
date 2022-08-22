@@ -12,7 +12,7 @@ void main() async {
   await SharedPrefController().initPref();
   debugPaintSizeEnabled = true;
   debugPaintBaselinesEnabled = false;
-  debugPaintLayerBordersEnabled = false;
+  debugPaintLayerBordersEnabled = true;
   debugPaintPointersEnabled = false;
   debugRepaintRainbowEnabled = false;
   debugRepaintTextRainbowEnabled = false;

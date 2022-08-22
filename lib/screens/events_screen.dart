@@ -75,8 +75,7 @@ class _EventsScreenState extends State<EventsScreen>
           SizedBox(
             height: 50,
             child: Container(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: AppBar(
                 backgroundColor: Color(0xffFBFBFC),
                 bottom: TabBar(
