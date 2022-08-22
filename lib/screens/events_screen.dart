@@ -116,15 +116,16 @@ class _EventsScreenState extends State<EventsScreen>
               controller: _tabController,
               children: [
                 Container(
-                  child:Column(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: <Widget>[
-EventWidget(),
-SizedBox(height:15),
-                          ],
-                        ),
-                )
-                
+                  child: Column(
+                    children: <Widget>[
+                      EventWidget(),
+                      SizedBox(height: 15),
+                      EventWidget(),
+                      SizedBox(height: 15),
+                      EventWidget(),
+                    ],
+                  ),
+                ),
                 EventWidget(),
               ],
             ),
