@@ -55,23 +55,23 @@ class EventWidget extends StatelessWidget {
             ),
           ),
           Expanded(
-            child:Align(
-                alignment: Alignment.topRight,
-                child: Container(
-padding: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                color: Color(0xffc5c5cb),
-                borderRadius: BorderRadius.circular(5),
-              ),
-                  child: Text(
-                    "Active",
-                    style: TextStyle(
-                      color: Colors.green,
-                    ),
+            child: Align(
+              alignment: Alignment.topRight,
+              child: Container(
+                padding: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  color: Color(0xffc5c5cb),
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Text(
+                  "Active",
+                  style: TextStyle(
+                    color: Colors.green,
                   ),
                 ),
               ),
             ),
+          ),
         ]),
       ),
     );
