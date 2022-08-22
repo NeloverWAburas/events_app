@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class EventWidget extends StatelessWidget {
   const EventWidget({Key? key}) : super(key: key);
@@ -15,10 +16,11 @@ class EventWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         child: Row(children: [
           Image.asset("assets/images/Rectangle 2968.png"),
-          SizedBox(width:10),
+          SizedBox(width: 10),
           SizedBox(
             height: 80,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
                   "12:00am-2hours",
