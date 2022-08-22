@@ -74,40 +74,44 @@ class _EventsScreenState extends State<EventsScreen>
           ),
           SizedBox(
             height: 50,
-            child: AppBar(
-              backgroundColor: Color(0xffFBFBFC),
-              bottom: TabBar(
-                  controller: _tabController,
-                  indicatorColor: Color(0xff253975),
-                  labelColor: Color(0xff253975),
-                  unselectedLabelColor: Color(0xff3A3652),
-                  overlayColor: MaterialStateProperty.resolveWith(
-                      (Set<MaterialState> states) {
-                    if (states.contains(MaterialState.hovered))
-                      return Colors.white;
-                  }),
-                  tabs: [
-                    Tab(
-                      child: Text('Active',
-                          style: TextStyle(
-                              fontWeight: _tabController.index == 0
-                                  ? FontWeight.bold
-                                  : FontWeight.w100)),
-                    ),
-                    Tab(
-                      child: Text('End',
-                          style: TextStyle(
-                              fontWeight: _tabController.index == 1
-                                  ? FontWeight.bold
-                                  : FontWeight.w100)),
-                    ),
-                  ]),
+            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+
+              child: AppBar(
+                backgroundColor: Color(0xffFBFBFC),
+                bottom: TabBar(
+                    controller: _tabController,
+                    indicatorColor: Color(0xff253975),
+                    labelColor: Color(0xff253975),
+                    unselectedLabelColor: Color(0xff3A3652),
+                    overlayColor: MaterialStateProperty.resolveWith(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered))
+                        return Colors.white;
+                    }),
+                    tabs: [
+                      Tab(
+                        child: Text('Active',
+                            style: TextStyle(
+                                fontWeight: _tabController.index == 0
+                                    ? FontWeight.bold
+                                    : FontWeight.w100)),
+                      ),
+                      Tab(
+                        child: Text('End',
+                            style: TextStyle(
+                                fontWeight: _tabController.index == 1
+                                    ? FontWeight.bold
+                                    : FontWeight.w100)),
+                      ),
+                    ]),
+              ),
             ),
           ),
           Expanded(
               flex: 2,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal:16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: TabBarView(
                   controller: _tabController,
                   children: [
