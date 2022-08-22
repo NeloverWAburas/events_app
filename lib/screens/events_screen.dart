@@ -54,7 +54,7 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               ),
               Positioned(
-                top: 120,
+                top: 125,
                 child: CircleAvatar(
                   child: Icon(
                     Icons.favorite,
