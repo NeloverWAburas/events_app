@@ -104,18 +104,18 @@ class _EventsScreenState extends State<EventsScreen>
                   ]),
             ),
           ),
-          Container(
-            padding: EdgeInsets.symmetric(horizontal:16),
-            child: Expanded(
-                flex: 2,
+          Expanded(
+              flex: 2,
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal:16),
                 child: TabBarView(
                   controller: _tabController,
                   children: [
                     Text("hahahah"),
                     Text("hahahah"),
                   ],
-                )),
-          )
+                ),
+              ))
         ],
       ),
     );
