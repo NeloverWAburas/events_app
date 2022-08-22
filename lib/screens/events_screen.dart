@@ -42,7 +42,7 @@ class _EventsScreenState extends State<EventsScreen>
               fit: BoxFit.cover,
             ),
           ),
-          child: Stack(
+          child: Stack( overflow: ,
             alignment: Alignment.topCenter,
             children: [
               Text(
@@ -56,10 +56,10 @@ class _EventsScreenState extends State<EventsScreen>
                 top: 100,
                 child: CircleAvatar(
                   child: Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                        size: 30.0,
-                          ),
+                    Icons.favorite,
+                    color: Colors.red,
+                    size: 30.0,
+                  ),
                 ),
               )
             ],
