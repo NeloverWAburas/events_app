@@ -54,14 +54,13 @@ class EventWidget extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            width: 100,
+          Expanded(
+            flex: 2,
             child: Container(
-              margin: EdgeInsets.all(5),
+              padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: Color(0xffc5c5cb),
                 borderRadius: BorderRadius.circular(5),
-                border: Border.all(color: Color(0xffc3c3cb)),
               ),
               child: Align(
                 alignment: Alignment.topRight,
