@@ -9,7 +9,7 @@ class EventWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.red,
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Color(0xff3232a9)),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
