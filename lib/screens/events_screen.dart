@@ -47,14 +47,15 @@ class _EventsScreenState extends State<EventsScreen>
               ),
             ),
             Positioned(
-              top: 4,
-              left: 4,
+              top: 14,
+              left: 14,
               child: Icon(
-          Icons.arrow_back_ios,
-          color: Color(0xff3E3A57),
-          size: 20.0,
-          textDirection: TextDirection.ltr,
-        ),),
+                Icons.arrow_back_ios,
+                color: Color(0xff3E3A57),
+                size: 20.0,
+                textDirection: TextDirection.ltr,
+              ),
+            ),
             Positioned(
               top: 115,
               child: CircleAvatar(
