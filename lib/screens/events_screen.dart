@@ -54,13 +54,14 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               ),
               Positioned(
-                top: 125,
+                top: 128,
                 child: CircleAvatar(
-                  child: Icon(
+                  child:Image.asset("assets/images/Mask Group 8.png")
+                   /*Icon(
                     Icons.favorite,
                     color: Colors.red,
                     size: 30.0,
-                  ),
+                  ),*/
                 ),
               )
             ],
