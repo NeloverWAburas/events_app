@@ -24,7 +24,7 @@ class EventWidget extends StatelessWidget {
                 Text(
                   "12:00am-2hours",
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Color(0xff8E8B9D),
                     fontSize: 11,
                   ),
                 ),
@@ -33,7 +33,10 @@ class EventWidget extends StatelessWidget {
                 ),
                 Text(
                   "Event Name",
-                  style: TextStyle(fontSize: 15,),
+                  style: TextStyle(
+                    color: Color(0xff423E5B),
+                    fontSize: 15,
+                  ),
                 ),
                 SizedBox(
                   height: 7,
@@ -41,7 +44,7 @@ class EventWidget extends StatelessWidget {
                 Text(
                   "12/12/2020",
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Color(0xff253975),
                     fontSize: 11,
                   ),
                 ),
