@@ -25,13 +25,14 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( automaticallyImplyLeading: false,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: 152,
         flexibleSpace: Stack(
           overflow: Overflow.visible,
           alignment: Alignment.topCenter,
           children: [
-            Image.asset("assets/images/AppBarImage.png", fit: BoxFit.cover),
+            Image.asset("assets/images/AppBarImage.png", fit: BoxFit.fill),
             Text(
               "Events",
               style: TextStyle(
