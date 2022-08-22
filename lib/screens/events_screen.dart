@@ -42,7 +42,8 @@ class _EventsScreenState extends State<EventsScreen>
               fit: BoxFit.cover,
             ),
           ),
-          child: Stack( overflow: Overflow.visible ,
+          child: Stack(
+            overflow: Overflow.visible,
             alignment: Alignment.topCenter,
             children: [
               Text(
