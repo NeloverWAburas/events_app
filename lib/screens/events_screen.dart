@@ -59,7 +59,7 @@ class _EventsScreenState extends State<EventsScreen>
                         Icons.favorite,
                         color: Colors.red,
                         size: 30.0,
-                          ),,
+                          ),
                 ),
               )
             ],
