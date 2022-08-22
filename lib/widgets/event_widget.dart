@@ -11,7 +11,7 @@ class EventWidget extends StatelessWidget {
       //width: 343,
       child: Container(
         decoration: BoxDecoration(
-          //color: Colors.red,
+          color: Colors.red,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Color(0xffECECEF)),
         ),
