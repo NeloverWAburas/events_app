@@ -8,14 +8,15 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 103,
-      width: 343,
+      //width: 343,
       child: Container(
         decoration: BoxDecoration(
           //color: Colors.red,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Color(0xffECECEF)),
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        padding:
+            const EdgeInsets.symmetric(horizontal: 2, vertical: 2), //14, 12
         child: Row(children: [
           Image.asset("assets/images/Rectangle 2968.png"),
           SizedBox(width: 10),
