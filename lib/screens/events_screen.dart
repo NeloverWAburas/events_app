@@ -30,7 +30,8 @@ class _EventsScreenState extends State<EventsScreen>
         leading: Icon(
           Icons.arrow_back_ios,
           color: Color(0xff3E3A57),
-          size: 20.0, textDirection: TextDirection.ltr,
+          size: 20.0,
+          textDirection: TextDirection.ltr,
         ),
         toolbarHeight: 152,
         flexibleSpace: Stack(
@@ -45,6 +46,15 @@ class _EventsScreenState extends State<EventsScreen>
                 fontSize: 17,
               ),
             ),
+            Positioned(
+              top: 4,
+              left: 4,
+              child: Icon(
+          Icons.arrow_back_ios,
+          color: Color(0xff3E3A57),
+          size: 20.0,
+          textDirection: TextDirection.ltr,
+        ),)
             Positioned(
               top: 115,
               child: CircleAvatar(
