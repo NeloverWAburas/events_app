@@ -81,6 +81,7 @@ class _EventsScreenState extends State<EventsScreen>
               child: AppBar(
                 backgroundColor: Color(0xffFBFBFC),
                 bottom: TabBar(
+                  isScrollable: true,
                     controller: _tabController,
                     indicatorColor: Color(0xff253975),
                     labelColor: Color(0xff253975),
