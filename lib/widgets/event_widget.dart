@@ -9,6 +9,7 @@ class EventWidget extends StatelessWidget {
     return SizedBox(
       child: Container(
         height: 103,
+        width: 343,
         decoration: BoxDecoration(
           color: Colors.red,
           borderRadius: BorderRadius.circular(20),
