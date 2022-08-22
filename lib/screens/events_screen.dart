@@ -118,6 +118,7 @@ class _EventsScreenState extends State<EventsScreen>
                 Container(
                   child: Column(
                     children: <Widget>[
+                      SizedBox(height: 15),
                       EventWidget(),
                       SizedBox(height: 15),
                       EventWidget(),
