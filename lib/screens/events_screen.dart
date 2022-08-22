@@ -53,10 +53,15 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               ),
               Positioned(
-               top:100,
-                  child: Container(
-                decoration: BoxDecoration(shape: BoxShape.circle),
-              ),)
+                top: 100,
+                child: CircleAvatar(
+                  child: Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                        size: 30.0,
+                          ),,
+                ),
+              )
             ],
           ),
         ),
