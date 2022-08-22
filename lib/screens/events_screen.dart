@@ -26,7 +26,7 @@ class _EventsScreenState extends State<EventsScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         /*leading: Icon(
           Icons.arrow_back_ios,
           color: Color(0xff3E3A57),
