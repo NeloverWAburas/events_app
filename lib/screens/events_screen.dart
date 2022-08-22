@@ -105,7 +105,7 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           Expanded(
-              //flex: 2,
+              flex: 2,
               child: TabBarView(
             controller: _tabController,
             children: [
