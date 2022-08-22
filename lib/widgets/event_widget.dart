@@ -41,6 +41,7 @@ class EventWidget extends StatelessWidget {
                 ),
                 Text(
                   "12/12/2020",
+                  textAlign: TextAlign.left,
                   style: TextStyle(
                     color: Colors.grey,
                   ),
