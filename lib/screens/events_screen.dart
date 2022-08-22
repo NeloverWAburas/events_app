@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/event_widget.dart';
+
 class EventsScreen extends StatefulWidget {
   const EventsScreen({Key? key}) : super(key: key);
   _EventsScreenState createState() => _EventsScreenState();
@@ -109,15 +111,14 @@ class _EventsScreenState extends State<EventsScreen>
           ),
           Expanded(
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 16),
-                child: TabBarView(
-                  controller: _tabController,
-                  children: [
-                    Text("hahahah"),
-                    Text("hahahah"),
-                  ],
-                ),
-              ))
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+EventWidget(),
+EventWidget(),              ],
+            ),
+          ))
         ],
       ),
     );
