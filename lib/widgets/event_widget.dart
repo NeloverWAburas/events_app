@@ -9,7 +9,7 @@ class EventWidget extends StatelessWidget {
       child: Row(children: [
         Image.asset("assets/images/Rectangle 2968.png"),
         SizedBox(
-          height: 55,
+          height: 70,
           child: Column(
             children: [
               Text(
