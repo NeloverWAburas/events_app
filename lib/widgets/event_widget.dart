@@ -53,12 +53,14 @@ class EventWidget extends StatelessWidget {
               ],
             ),
           ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              "Active",
-              style: TextStyle(
-                color: Colors.green,
+          Container(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: Text(
+                "Active",
+                style: TextStyle(
+                  color: Colors.green,
+                ),
               ),
             ),
           )
