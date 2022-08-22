@@ -7,10 +7,9 @@ class EventWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-              height: 103,
-        width: 343,
+      height: 103,
+      width: 343,
       child: Container(
-
         decoration: BoxDecoration(
           color: Colors.red,
           borderRadius: BorderRadius.circular(20),

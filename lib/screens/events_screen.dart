@@ -115,7 +115,16 @@ class _EventsScreenState extends State<EventsScreen>
             child: TabBarView(
               controller: _tabController,
               children: [
-                EventWidget(),
+                Container(
+                  child:Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+EventWidget(),
+SizedBox(height:15),
+                          ],
+                        ),
+                )
+                
                 EventWidget(),
               ],
             ),
