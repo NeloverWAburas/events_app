@@ -27,12 +27,12 @@ class _EventsScreenState extends State<EventsScreen>
     return Scaffold(
       appBar: AppBar(
         //automaticallyImplyLeading: false,
-        leading: Icon(
+        /*leading: Icon(
           Icons.arrow_back_ios,
           color: Color(0xff3E3A57),
           size: 20.0,
           textDirection: TextDirection.ltr,
-        ),
+        ),*/
         toolbarHeight: 152,
         flexibleSpace: Stack(
           overflow: Overflow.visible,
