@@ -25,25 +25,9 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        //centerTitle: true,
-        /*title: Text(
-          "Events",
-          style: TextStyle(
-            color: Color(0xff3E3A57),
-            fontSize: 17,
-          ),
-        ),*/
+      appBar: AppBar( automaticallyImplyLeading: false,
         toolbarHeight: 152,
-        flexibleSpace: /*Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/AppBarImage.png"),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: */
-            Stack(
+        flexibleSpace: Stack(
           overflow: Overflow.visible,
           alignment: Alignment.topCenter,
           children: [
@@ -61,15 +45,9 @@ class _EventsScreenState extends State<EventsScreen>
                 backgroundColor: Colors.white,
                 child: Image.asset("assets/images/Mask Group 8.png"),
                 radius: 40,
-                /*Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                    size: 30.0,
-                  ),*/
               ),
             )
           ],
-          // ),
         ),
         backgroundColor: Color(0x00f44336),
       ),
