@@ -115,8 +115,9 @@ class _EventsScreenState extends State<EventsScreen>
             child: TabBarView(
               controller: _tabController,
               children: [
-EventWidget(),
-EventWidget(),              ],
+                EventWidget(),
+                EventWidget(),
+              ],
             ),
           ))
         ],
