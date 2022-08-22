@@ -16,7 +16,7 @@ class EventWidget extends StatelessWidget {
           border: Border.all(color: Color(0xffECECEF)),
         ),
         padding:
-            const EdgeInsets.symmetric(horizontal: 2, vertical: 2), //14, 12
+            const EdgeInsets.symmetric(horizontal: 4), //14, 12
         child: Row(children: [
           Image.asset("assets/images/Rectangle 2968.png"),
           SizedBox(width: 10),
