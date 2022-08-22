@@ -27,16 +27,13 @@ class _EventsScreenState extends State<EventsScreen>
     return Scaffold(
       appBar: AppBar(
         //centerTitle: true,
-        title: Align(
-          alignment: Alignment.topCenter,
-          child: Text(
-            "Events",
-            style: TextStyle(
-              color: Color(0xff3E3A57),
-              fontSize: 17,
-            ),
+        /*title: Text(
+          "Events",
+          style: TextStyle(
+            color: Color(0xff3E3A57),
+            fontSize: 17,
           ),
-        ),
+        ),*/
         toolbarHeight: 152,
         flexibleSpace: Container(
           decoration: BoxDecoration(
@@ -44,6 +41,21 @@ class _EventsScreenState extends State<EventsScreen>
               image: AssetImage("assets/images/AppBarImage.png"),
               fit: BoxFit.cover,
             ),
+          ),
+          child: Stack(
+            alignment: Alignment.topCenter,
+            children: [
+              Text(
+                "Events",
+                style: TextStyle(
+                  color: Color(0xff3E3A57),
+                  fontSize: 17,
+                ),
+              ),
+              Positioned(child: Container(decoration: BoxDecoration(
+                shape:BoxShape.circle
+              ),))
+            ],
           ),
         ),
         backgroundColor: Color(0x00f44336),
