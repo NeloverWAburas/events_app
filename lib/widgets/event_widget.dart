@@ -59,7 +59,7 @@ class EventWidget extends StatelessWidget {
             child: Container(
               margin: EdgeInsets.all(5),
               decoration: BoxDecoration(
-                color: Color(0xff939397),
+                color: Color(0xffc5c5cb),
                 borderRadius: BorderRadius.circular(5),
                 border: Border.all(color: Color(0xffc3c3cb)),
               ),
