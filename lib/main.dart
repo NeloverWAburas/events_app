@@ -10,7 +10,7 @@ import 'package:flutter/rendering.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefController().initPref();
-  debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = true;
   /*debugPaintBaselinesEnabled = false;
   debugPaintLayerBordersEnabled = false;
   debugPaintPointersEnabled = false;
