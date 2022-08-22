@@ -20,7 +20,7 @@ class EventWidget extends StatelessWidget {
           SizedBox(
             height: 80,
             child: Align(
-              alignment: Alignment.centerLeft,
+              alignment: Alignment.bottomRight,
               child: Column(
                 children: [
                   Text(
