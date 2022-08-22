@@ -27,12 +27,14 @@ class _EventsScreenState extends State<EventsScreen>
     return Scaffold(
       appBar: AppBar(
         //centerTitle: true,
-        title: Text(
-          "Events",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Color(0xff3E3A57),
-            fontSize: 17,
+        title: Align(
+          alignment: Alignment.centerRight,
+          child: Text(
+            "Events",
+            style: TextStyle(
+              color: Color(0xff3E3A57),
+              fontSize: 17,
+            ),
           ),
         ),
         toolbarHeight: 152,
