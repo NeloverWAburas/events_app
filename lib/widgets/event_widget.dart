@@ -7,7 +7,8 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Image.asset("assets/images/Rectangle 2968.png"),
-      Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+      Column(
+         children: [
         Text(
           "12:00am-2hours",
           style: TextStyle(
@@ -30,7 +31,7 @@ class EventWidget extends StatelessWidget {
             color: Colors.grey,
           ),
         ),
-      ])
+      ],)
     ]);
   }
 }
