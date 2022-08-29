@@ -1,9 +1,12 @@
 import 'package:events/prefs/shared_pref_controller.dart';
+import 'package:events/screens/add_new_event.dart';
 import 'package:events/screens/categories_screen.dart';
+import 'package:events/screens/event_images_screen.dart';
 import 'package:events/screens/events_screen.dart';
 import 'package:events/screens/launch_screen.dart';
 import 'package:events/screens/login_screen.dart';
 import 'package:events/screens/out_boarding_screen.dart';
+import 'package:events/screens/single_event_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -19,7 +22,6 @@ void main() async {
   debugDisableClipLayers = false;
   debugDisablePhysicalShapeLayers = false;
   debugDisableOpacityLayers = false;*/
-
   runApp(MyApp());
 }
 
@@ -30,7 +32,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Events",
       theme: ThemeData(
-        //primaryColor: Color(0xff253975),
         textTheme: Theme.of(context).textTheme.apply(
               bodyColor: Color(0xff253975),
             ),
@@ -42,6 +43,9 @@ class MyApp extends StatelessWidget {
         '/login_screen': (context) => const LoginScreen(),
         '/categories_screen': (context) => const CategoriesScreen(),
         '/events_screen': (context) => const EventsScreen(),
+        '/single_event_screen': (context) => const SingleEventScreen(),
+        '/event_images_screen': (context) => const EventImagesWidget(),
+        '/add_new_event': (context) => const AddNewEvent(),
       },
       debugShowCheckedModeBanner: false,
       home: LaunchScreen(),

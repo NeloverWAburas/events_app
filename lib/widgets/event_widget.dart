@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class EventWidget extends StatelessWidget {
   const EventWidget({Key? key}) : super(key: key);
@@ -8,7 +6,9 @@ class EventWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
-        onTap: (() => () {}),
+        onTap: () {
+          Navigator.pushNamed(context, "/single_event_screen");
+        },
         child: SizedBox(
           height: 103,
           //width: 343,
@@ -26,6 +26,7 @@ class EventWidget extends StatelessWidget {
               SizedBox(
                 height: 80,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       "12:00am-2hours",

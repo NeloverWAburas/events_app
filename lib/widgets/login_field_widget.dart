@@ -5,11 +5,13 @@ class LoginFieldWidget extends StatelessWidget {
   final String hintText;
   late TextEditingController controller;
   final bool obscureText;
+  final TextInputType inputType;
 
   LoginFieldWidget(
       {this.caption = "",
       this.hintText = "",
       this.obscureText = false,
+      this.inputType = TextInputType.name,
       required TextEditingController controller}) {
     this.controller = controller;
   }
@@ -31,6 +33,7 @@ class LoginFieldWidget extends StatelessWidget {
         TextField(
           controller: controller,
           obscureText: obscureText,
+          keyboardType: inputType,
           decoration: InputDecoration(
             hintText: hintText,
             focusedBorder: OutlineInputBorder(

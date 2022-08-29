@@ -27,12 +27,6 @@ class _EventsScreenState extends State<EventsScreen>
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        /*leading: Icon(
-          Icons.arrow_back_ios,
-          color: Color(0xff3E3A57),
-          size: 20.0,
-          textDirection: TextDirection.ltr,
-        ),*/
         toolbarHeight: 152,
         flexibleSpace: Stack(
           overflow: Overflow.visible,
@@ -42,18 +36,23 @@ class _EventsScreenState extends State<EventsScreen>
             Text(
               "Events",
               style: TextStyle(
-                color: Color(0xff3E3A57),
+                color: Colors.white, //Color(0xff3E3A57),
                 fontSize: 17,
               ),
             ),
             Positioned(
               top: 14,
               left: 14,
-              child: Icon(
-                Icons.arrow_back_ios,
-                color: Color(0xff3E3A57),
-                size: 20.0,
-                textDirection: TextDirection.ltr,
+              child: IconButton(
+                icon: Icon(
+                  Icons.arrow_back_ios,
+                  color: Colors.white, //Color(0xff3E3A57),
+                  size: 20.0,
+                  textDirection: TextDirection.ltr,
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
             ),
             Positioned(

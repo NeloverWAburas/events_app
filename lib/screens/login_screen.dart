@@ -1,3 +1,4 @@
+import 'package:events/api/controllers/api_auth_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,28 @@ class _LoginScreenState extends State<LoginScreen> {
     super.initState();
     _phoneController = TextEditingController();
     _passwordController = TextEditingController();
+  }
+
+  Future<void> login() async {
+    bool status = await ApiAuthController().login(context,
+        mobile: _phoneController.text, password: _passwordController.text);
+    if (status) {
+      Navigator.pushNamed(context, "/categories_screen");
+    }
+  }
+
+  Future<void> performLogin() async {
+    if (checkData()) {
+      await login();
+    }
+  }
+
+  bool checkData() {
+    if (_passwordController.text.isNotEmpty &&
+        _phoneController.text.isNotEmpty) {
+      return true;
+    }
+    return false;
   }
 
   @override
@@ -61,6 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 LoginFieldWidget(
                     caption: "Phone",
                     hintText: "Enter your phone",
+                    inputType: TextInputType.phone,
                     obscureText: false,
                     controller: _phoneController),
                 SizedBox(height: 25),
@@ -68,13 +92,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     caption: "Password",
                     hintText: "Enter Password",
                     obscureText: true,
+                    inputType: TextInputType.visiblePassword,
                     controller: _passwordController),
                 SizedBox(height: 78),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 9),
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, "/events_screen");
+                      performLogin();
                     },
                     child: Text(
                       "Sign in",

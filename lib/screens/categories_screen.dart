@@ -1,5 +1,7 @@
+import 'package:events/models/category_model.dart';
 import 'package:events/widgets/category_widget.dart';
 import 'package:flutter/material.dart';
+import '../api/controllers/api_category_controller.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({Key? key}) : super(key: key);
@@ -7,6 +9,14 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
+  List<CategoryModel> _categoryModel = <CategoryModel>[];
+  late Future<List<CategoryModel>> _future;
+
+  void initState() {
+    super.initState();
+    _future = ApiCategoryController().getCategories(context: context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,18 +55,29 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               ),
               /////////////////////////////////////////
               SizedBox(height: 30),
-              GridView.builder(
-                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                    maxCrossAxisExtent: 200,
-                    childAspectRatio: 165 / 185,
-                    crossAxisSpacing: 14,
-                    mainAxisSpacing: 14,
-                  ),
-                  shrinkWrap: true,
-                  itemCount: 6,
-                  itemBuilder: (BuildContext context, index) {
-                    return CategoryWidget();
-                  }),
+              FutureBuilder<List<CategoryModel>>(
+                future: _future,
+                builder: ((context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return Center(child: CircularProgressIndicator());
+                  } else if (snapshot.hasData && snapshot.data!.isNotEmpty) {
+                    _categoryModel = snapshot.data ?? [];
+                    return GridView.builder(
+                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 200,
+                          childAspectRatio: 165 / 185,
+                          crossAxisSpacing: 14,
+                          mainAxisSpacing: 14,
+                        ),
+                        shrinkWrap: true,
+                        itemCount: _categoryModel.length,
+                        itemBuilder: (BuildContext context, index) {
+                          return CategoryWidget();
+                        });
+                  }
+                  return Center(child: Text("Error"));
+                }),
+              ),
             ],
           ),
         ),
